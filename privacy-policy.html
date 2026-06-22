@@ -111,6 +111,14 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            margin-top: 32px;
+        }
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 24px;
+            margin-bottom: 12px;
         }
         .section-num {
             width: 32px; height: 32px;
@@ -134,6 +142,11 @@
             margin: 20px 0;
         }
         .highlight-box p { margin: 0; color: var(--text); font-size: 0.9rem; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+        th, td { border: 1px solid var(--border); padding: 12px 16px; text-align: left; }
+        th { background: var(--surface2); color: var(--accent); font-weight: 600; }
+        td { color: var(--text-muted); }
 
         /* Contact */
         .contact-card {
@@ -172,6 +185,7 @@
         @media (max-width: 600px) {
             .toc { padding: 20px; }
             .contact-card { padding: 20px; }
+            th, td { padding: 8px; font-size: 0.85rem; }
         }
     </style>
 </head>
@@ -179,188 +193,343 @@
 
 <header class="header">
     <div class="header-logo">🎓 Taalimi<span> Safar</span></div>
-    <div class="header-tagline">Your Journey of Knowledge</div>
+    <div class="header-tagline">Educational & Career Guidance Platform for Students in India</div>
     <h1>Privacy Policy</h1>
-    <div class="header-meta">Last updated: June 2, 2026 &nbsp;|&nbsp; Effective: June 2, 2026</div>
+    <div class="header-meta">Effective Date: 14 May 2025  |  Last Updated: 14 May 2026  |  Android Application</div>
 </header>
 
 <div class="container">
 
+    <div class="highlight-box">
+        <p>This Privacy Policy explains how Taalimi Safar collects, uses, stores, and protects information when you use our Android application. By using Taalimi Safar, you agree to the practices described in this document.</p>
+    </div>
+
     <div class="toc">
         <h2>Table of Contents</h2>
         <ol>
-            <li><a href="#s1">Information We Collect</a></li>
-            <li><a href="#s2">How We Use Your Information</a></li>
-            <li><a href="#s3">How We Share Your Information</a></li>
-            <li><a href="#s4">Data Storage & Security</a></li>
-            <li><a href="#s5">Your Rights & Choices</a></li>
-            <li><a href="#s6">Account Deletion</a></li>
-            <li><a href="#s7">Children's Privacy</a></li>
-            <li><a href="#s8">Push Notifications</a></li>
-            <li><a href="#s9">Third-Party Services</a></li>
-            <li><a href="#s10">Changes to This Policy</a></li>
-            <li><a href="#s11">Contact Us</a></li>
+            <li><a href="#s1">About This Application</a></li>
+            <li><a href="#s2">Information We Collect</a></li>
+            <li><a href="#s3">How We Use Your Information</a></li>
+            <li><a href="#s4">Legal Basis for Processing</a></li>
+            <li><a href="#s5">Third-Party Service Providers</a></li>
+            <li><a href="#s6">Data Sharing & Disclosure</a></li>
+            <li><a href="#s7">Data Retention</a></li>
+            <li><a href="#s8">Account Deletion</a></li>
+            <li><a href="#s9">Data Security</a></li>
+            <li><a href="#s10">Children's Privacy</a></li>
+            <li><a href="#s11">Your Rights & Choices</a></li>
+            <li><a href="#s12">Cookies & Tracking Technologies</a></li>
+            <li><a href="#s13">Changes to This Privacy Policy</a></li>
+            <li><a href="#s14">Governing Law & Jurisdiction</a></li>
+            <li><a href="#s15">Contact Us</a></li>
         </ol>
-    </div>
-
-    <div class="highlight-box">
-        <p>Welcome to <strong>Taalimi Safar</strong>. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains what information we collect, why we collect it, and how you can update, manage, export, and delete it.</p>
     </div>
 
     <!-- Section 1 -->
     <div class="section" id="s1">
-        <h2><span class="section-num">1</span> Information We Collect</h2>
-        <p>We collect information you provide directly to us when you:</p>
+        <h2><span class="section-num">1</span> About This Application</h2>
+        <h3>Core Purpose</h3>
+        <p>The platform is built to provide guidance and counselling for underprivileged communities in smaller Indian cities. Its focus areas — education, e-skills, government schemes, business compliance, and employment opportunities — directly address the barriers these communities face in accessing opportunities.</p>
+        
+        <h3>Key Features</h3>
         <ul>
-            <li><strong>Create an account:</strong> username, email address, and password (stored as a secure hash).</li>
-            <li><strong>Complete your profile:</strong> display name, field of study, profile picture, and role (Learner / Expert / Professor / Teacher).</li>
-            <li><strong>Use community features:</strong> questions and answers you post.</li>
-            <li><strong>Engage with content:</strong> quiz results, course progress, daily login streaks, and earned points.</li>
-            <li><strong>Submit feedback:</strong> text feedback submitted through the app.</li>
+            <li><strong>Educational support:</strong> Access to curated learning resources and counselling services.</li>
+            <li><strong>Skill development:</strong> Training modules designed to improve employability.</li>
+            <li><strong>Government schemes:</strong> Simplified information about welfare programs, explained in local languages.</li>
+            <li><strong>Business compliance:</strong> Guidance for small entrepreneurs to meet legal and regulatory requirements.</li>
+            <li><strong>Employment opportunities:</strong> Local job listings and career counselling tailored to regional needs.</li>
+            <li><strong>Community forum:</strong> A moderated space for peer-to-peer knowledge sharing.</li>
+            <li><strong>Interactive learning:</strong> Daily quizzes and a reward points system to encourage consistent engagement.</li>
         </ul>
-        <p>We also collect certain information automatically when you use the app:</p>
+
+        <h3>User Benefits</h3>
         <ul>
-            <li><strong>Device tokens:</strong> FCM (Firebase Cloud Messaging) token for push notifications.</li>
-            <li><strong>Usage data:</strong> daily login timestamps for streak calculation.</li>
-            <li><strong>Log data:</strong> standard server logs (IP address, request timestamps) for security monitoring.</li>
+            <li><strong>Access to resources:</strong> Students gain structured educational support.</li>
+            <li><strong>Employability skills:</strong> Practical training for real-world job readiness.</li>
+            <li><strong>Awareness of schemes:</strong> Helps families benefit from welfare programs.</li>
+            <li><strong>Entrepreneurial guidance:</strong> Small business owners learn compliance essentials.</li>
+            <li><strong>Career opportunities</strong></li>
+        </ul>
+
+        <h3>Adeeb Care Foundation</h3>
+        <p>Is a Section 8 Company registered in Delhi, legally recognized under the Companies Act of India. Established on 22 July 2022, the foundation is dedicated to social welfare and community upliftment, focusing on marginalized groups through structured programs in education, healthcare, and community development.</p>
+        
+        <h4>Community Development</h4>
+        <ul>
+            <li><strong>Vocational training:</strong> Building employability through practical skill development.</li>
+            <li><strong>Women empowerment:</strong> Promoting financial independence and social equality.</li>
+            <li><strong>Livelihood support:</strong> Helping families sustain themselves through small-scale income opportunities.</li>
+        </ul>
+        
+        <h4>Educational Support</h4>
+        <ul>
+            <li><strong>Tutoring:</strong> Providing extra academic help to disadvantaged students.</li>
+            <li><strong>Scholarships:</strong> Ensuring continuity in education through financial aid.</li>
+            <li><strong>Awareness campaigns:</strong> Promoting literacy and the importance of education.</li>
+        </ul>
+
+        <h4>Welfare Programs</h4>
+        <ul>
+            <li><strong>Government schemes assistance:</strong> Helping communities access their rightful benefits.</li>
+            <li><strong>Food distribution:</strong> Providing meals to families in need.</li>
+            <li><strong>Housing support:</strong> Guidance and aid for shelter and basic living conditions.</li>
+        </ul>
+
+        <h3>Taalimi Mela – Annual Educational Event</h3>
+        <p>The Taalimi Mela is Adeeb Care Foundation’s yearly educational festival in New Delhi, designed to bring together students, families, and communities in a celebration of learning and empowerment.</p>
+        
+        <h4>Event Highlights</h4>
+        <ul>
+            <li><strong>Education counselling:</strong> Career guidance and scholarship awareness sessions.</li>
+            <li><strong>Skill-building workshops:</strong> Training in IT, crafts, and vocational trades.</li>
+            <li><strong>Community engagement:</strong> Cultural performances, debates, and awareness skits.</li>
+            <li><strong>Welfare support:</strong> Food distribution and government scheme help desks.</li>
         </ul>
     </div>
 
     <!-- Section 2 -->
     <div class="section" id="s2">
-        <h2><span class="section-num">2</span> How We Use Your Information</h2>
-        <p>We use the information we collect to:</p>
+        <h2><span class="section-num">2</span> Information We Collect</h2>
+        <p>We collect only the information necessary to provide you with a safe, functional, and personalised experience on Taalimi Safar.</p>
+        <p>Users may browse educational and career-related content without creating an account. Registration is required only for interactive community features such as posting questions, replying, or participating in discussions.</p>
+        
+        <h3>2.1 Personal Information</h3>
+        <p>The following personal data is collected when you register and use the application:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Element</th>
+                    <th>Purpose of Collection</th>
+                    <th>Mandatory?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Email Address</strong></td>
+                    <td>Account creation, OTP verification, and essential communications</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>Full Name</strong></td>
+                    <td>Personalisation of your account and community profile</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Username</strong></td>
+                    <td>Identification within the community forum; displayed publicly on posts</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>Password</strong></td>
+                    <td>Account authentication and security (stored encrypted)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>User-Generated Content</strong></td>
+                    <td>Forum questions, replies, and community contributions posted by you</td>
+                    <td>No (optional)</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="highlight-box">
+            <p><strong>Password Security:</strong> Passwords are never stored in plain text. All passwords are processed using industry-standard cryptographic hashing algorithms before storage. We do not have access to your plain-text password at any time.</p>
+        </div>
+
+        <h3>2.2 Non-Personal Information</h3>
         <ul>
-            <li>Create and manage your account and authenticate your identity.</li>
-            <li>Deliver personalized educational content relevant to your field and role.</li>
-            <li>Send push notifications about replies, likes, admin updates, and app announcements.</li>
-            <li>Calculate and award daily login rewards and achievement points.</li>
-            <li>Improve the app based on aggregated usage analytics.</li>
-            <li>Respond to your feedback and support requests.</li>
-            <li>Detect and prevent fraud, abuse, and security incidents.</li>
-            <li>Comply with legal obligations.</li>
+            <li><strong>Daily Quiz Scores:</strong> Your performance on in-app quizzes to display your progress, calculate reward points, and generate leaderboard data.</li>
+            <li><strong>Accumulated Reward Points:</strong> Points earned through platform activities, tracked to power the in-app rewards and gamification system.</li>
+        </ul>
+
+        <h3>2.3 Information We Do NOT Collect</h3>
+        <ul>
+            <li>Precise GPS location or geolocation data</li>
+            <li>Device contacts, phone logs, or SMS data</li>
+            <li>Financial or payment information (the app is free to use)</li>
+            <li>Government-issued identity numbers (Aadhaar, PAN, etc.)</li>
+            <li>Biometric data of any kind</li>
         </ul>
     </div>
 
     <!-- Section 3 -->
     <div class="section" id="s3">
-        <h2><span class="section-num">3</span> How We Share Your Information</h2>
-        <p>We do <strong>not</strong> sell your personal information. We share information only in these limited circumstances:</p>
+        <h2><span class="section-num">3</span> How We Use Your Information</h2>
+        <p>We use the information we collect solely for the purposes described below and will not use your data for any incompatible purpose without prior notice and consent.</p>
         <ul>
-            <li><strong>With other users (public data):</strong> your username and community posts are visible to other Taalimi Safar users.</li>
-            <li><strong>Service providers:</strong> We use trusted third-party services (Firebase for notifications, AWS S3 for media storage, Brevo for transactional email) solely to operate the app. They may not use your data for their own purposes.</li>
-            <li><strong>Legal requirements:</strong> We may disclose information if required by law, court order, or to protect the rights and safety of our users.</li>
-            <li><strong>Business transfers:</strong> In the event of a merger or acquisition, your data may be transferred with appropriate notice.</li>
+            <li><strong>Account Management:</strong> To create, verify, and manage your user account, including sending OTP emails via Brevo for secure authentication.</li>
+            <li><strong>Service Delivery:</strong> To provide core features of the application, including job listings, scholarship information, and the community forum.</li>
+            <li><strong>Push Notifications:</strong> To send you relevant alerts and updates via Firebase Cloud Messaging (FCM). You may opt out at any time through your device settings.</li>
+            <li><strong>Society Moderation:</strong> Your username and user-generated content are used to display your contributions and to moderate the society in accordance with our guidelines.</li>
+            <li><strong>Progress Tracking:</strong> To record your daily quiz scores and reward points, display your progress, and maintain leaderboard functionality.</li>
+            <li><strong>Security:</strong> To detect, investigate, and prevent unauthorised access, abuse, or violations of our Terms of Service.</li>
+            <li><strong>Legal Compliance:</strong> To comply with applicable laws, regulations, and lawful governmental or judicial requests.</li>
         </ul>
     </div>
 
     <!-- Section 4 -->
     <div class="section" id="s4">
-        <h2><span class="section-num">4</span> Data Storage & Security</h2>
-        <p>Your data is stored on secure servers hosted by <strong>DigitalOcean</strong> with PostgreSQL databases. We implement:</p>
+        <h2><span class="section-num">4</span> Legal Basis for Processing</h2>
+        <p>Our processing of your personal data is grounded in the following legal bases under India's Digital Personal Data Protection Act, 2023 (DPDPA):</p>
         <ul>
-            <li>Encrypted passwords (never stored in plain text).</li>
-            <li>HTTPS/TLS encryption for all data in transit.</li>
-            <li>JWT-based authentication with token blacklisting on logout.</li>
-            <li>Regular security monitoring and access controls.</li>
+            <li><strong>Consent:</strong> By registering for Taalimi Safar, you provide explicit consent for data collection and processing.</li>
+            <li><strong>Contractual Necessity:</strong> Processing is necessary to perform our obligations under our Terms of Service — specifically, to create and maintain your account and provide requested services.</li>
         </ul>
-        <p>Media files (profile pictures) are stored in <strong>AWS S3</strong> with private access controls.</p>
-        <div class="highlight-box">
-            <p>⚠️ While we implement industry-standard security practices, no method of transmission over the Internet is 100% secure. Please use a strong, unique password for your Taalimi Safar account.</p>
-        </div>
     </div>
 
     <!-- Section 5 -->
     <div class="section" id="s5">
-        <h2><span class="section-num">5</span> Your Rights & Choices</h2>
-        <p>You have the following rights regarding your personal data:</p>
+        <h2><span class="section-num">5</span> Third-Party Service Providers</h2>
+        <p>To operate Taalimi Safar effectively, we engage the following trusted third-party service providers. These providers are granted access only to the extent necessary to perform their specific functions and are contractually bound to protect your information.</p>
         <ul>
-            <li><strong>Access:</strong> View your profile data at any time within the app.</li>
-            <li><strong>Update:</strong> Edit your profile information directly in the app settings.</li>
-            <li><strong>Delete:</strong> Request permanent deletion of your account and all associated data (see Section 6).</li>
-            <li><strong>Opt out of notifications:</strong> Disable push notifications in your device settings or within the app.</li>
-            <li><strong>Data portability:</strong> Contact us to request an export of your personal data.</li>
+            <li><strong>Firebase Cloud Messaging (FCM) : Google LLC</strong><br>Used exclusively to deliver push notifications to your device, such as forum reply alerts and platform updates. Governed by Google's Privacy Policy.</li>
+            <li><strong>Brevo (formerly Sendinblue) : Transactional Email / OTP</strong><br>Used to transmit One-Time Password (OTP) emails for account verification and secure authentication. Your email address is shared with Brevo solely for this purpose. Governed by Brevo's Privacy Policy.</li>
+            <li><strong>DigitalOcean, LLC : Cloud Hosting & Database</strong><br>Provides the secure cloud infrastructure on which our servers and database operate. All user data stored on Taalimi Safar's servers resides on DigitalOcean's infrastructure. Governed by DigitalOcean's Privacy Policy.</li>
         </ul>
+        <p><em>Note: We encourage you to review the privacy policies of these third-party providers independently, as their data practices are governed by their own terms.</em></p>
     </div>
 
     <!-- Section 6 -->
     <div class="section" id="s6">
-        <h2><span class="section-num">6</span> Account Deletion</h2>
-        <p>You may permanently delete your Taalimi Safar account at any time. Upon deletion:</p>
+        <h2><span class="section-num">6</span> Data Sharing & Disclosure</h2>
+        <div class="highlight-box">
+            <p><strong>Our Commitment:</strong> We do not sell, rent, trade, or commercially exploit your personal data to any third party. Ever.</p>
+        </div>
+        <p>Your personal information is shared only in the following limited and necessary circumstances:</p>
         <ul>
-            <li>Your account, email, password, profile, and personal data are <strong>permanently removed</strong>.</li>
-            <li>Your community posts (questions & answers) are <strong>anonymised</strong> — they remain visible but your name is replaced with "Deleted User".</li>
-            <li>Your earned points and login history are deleted.</li>
-            <li>Deletion is processed within <strong>48 hours</strong> of your request. You may cancel within this period by re-logging into the app.</li>
+            <li><strong>Infrastructure Partners:</strong> Data is shared with DigitalOcean, Brevo, and Firebase solely to operate the application's technical functions. These providers act as data processors on our behalf.</li>
+            <li><strong>Public Forum Content:</strong> Any questions or replies you post in the community forum are visible to other registered users. Your username will be associated with your public posts.</li>
+            <li><strong>Legal Requirements:</strong> We may disclose your information if required by law, court order, regulatory authority, or governmental request under India's DPDPA or Information Technology Act.</li>
+            <li><strong>Safety & Security:</strong> We may share information where necessary to prevent fraud, protect user safety, or investigate violations of our Terms of Service.</li>
+            <li><strong>Business Transfers:</strong> In the unlikely event of a merger or acquisition, your data may be transferred to a successor entity. We will notify you of any such change.</li>
         </ul>
-        <p style="margin-top: 16px;">
-            To request account deletion, use the form on our
-            <a href="./account-deletion.html" style="color: var(--accent); text-decoration: underline;">Account Deletion page</a>
-            or go to <strong>App Settings → Delete Account</strong>.
-        </p>
     </div>
 
     <!-- Section 7 -->
     <div class="section" id="s7">
-        <h2><span class="section-num">7</span> Children's Privacy</h2>
-        <p>Taalimi Safar is designed for students and learners of all ages. We do not knowingly collect personal information from children under the age of <strong>13</strong> without verifiable parental consent.</p>
-        <p>If you believe a child under 13 has provided us with personal information without consent, please contact us immediately and we will delete the information.</p>
+        <h2><span class="section-num">7</span> Data Retention</h2>
+        <p>We retain your personal data only for as long as necessary to fulfil the purposes outlined in this policy, or as required by applicable law.</p>
+        <ul>
+            <li><strong>Active Accounts:</strong> Personal information is retained for the duration of your active use of the application.</li>
+        </ul>
     </div>
 
     <!-- Section 8 -->
     <div class="section" id="s8">
-        <h2><span class="section-num">8</span> Push Notifications</h2>
-        <p>We use <strong>Firebase Cloud Messaging (FCM)</strong> to send push notifications to your device. These notifications include:</p>
-        <ul>
-            <li>Replies and likes on your community posts.</li>
-            <li>Admin announcements and important updates.</li>
-            <li>Daily login reminders (if enabled).</li>
-        </ul>
-        <p>You can disable push notifications at any time in your device's notification settings. Your FCM device token is stored only for the purpose of delivering notifications and is deleted when you log out or delete your account.</p>
+        <h2><span class="section-num">8</span> Account Deletion</h2>
+        <p>You have the right to request the permanent deletion of your Taalimi Safar account and all associated personal data at any time. Once a deletion request is submitted, the following process will apply:</p>
+        
+        <h3>8.1 Initiating a Deletion Request</h3>
+        <p>Users may request account deletion through the in-app account settings or by submitting a written request to our Data Privacy Contact at Support@adeebcarefoundation.org. Upon submission, your account will be placed in a pending deletion state and a confirmation notification will be sent to your registered email address.</p>
+        
+        <h3>8.2 48-Hour Grace Period</h3>
+        <p>Following the submission of a deletion request, a mandatory grace period of 48 hours will commence. This period is provided to allow users the opportunity to reconsider and cancel the deletion if the request was made in error. During this window, the account remains accessible but is not actively used by our systems for any new data processing beyond what is required to maintain the pending deletion state.</p>
+        
+        <h3>8.3 Cancellation of Deletion Request</h3>
+        <p>If you log in to your account at any point during the 48-hour grace period, the deletion request will be automatically cancelled and your account will be fully reinstated with no data removed. You will receive a notification confirming that the deletion has been successfully cancelled.</p>
+        
+        <h3>8.4 Permanent Deletion</h3>
+        <p>If no login activity is detected within the 48-hour grace period, your account will be permanently and irreversibly deleted upon expiry of that period. All personal data associated with your account — including your name, email address, username, password hash, quiz scores, and reward points — will be permanently purged from our active databases and systems. Please note that this action cannot be undone, and any data deleted in this process will not be recoverable.</p>
+        
+        <h3>8.5 Public Forum Content</h3>
+        <p>Content you have previously posted in the community forum (such as questions or replies) may be anonymised rather than deleted, in order to preserve the integrity of community discussions. In such cases, your username and any personally identifying information will be removed from those posts.</p>
     </div>
 
     <!-- Section 9 -->
     <div class="section" id="s9">
-        <h2><span class="section-num">9</span> Third-Party Services</h2>
-        <p>We integrate the following third-party services. Each has its own privacy policy:</p>
+        <h2><span class="section-num">9</span> Data Security</h2>
+        <p>We implement appropriate technical and organisational measures to protect your personal data from unauthorised access, alteration, disclosure, or destruction.</p>
         <ul>
-            <li><strong>Firebase (Google):</strong> Push notifications — <a href="https://firebase.google.com/support/privacy" target="_blank" style="color: var(--accent);">Firebase Privacy</a></li>
-            <li><strong>AWS S3 (Amazon):</strong> Media file storage — <a href="https://aws.amazon.com/privacy/" target="_blank" style="color: var(--accent);">AWS Privacy</a></li>
-            <li><strong>Brevo (Sendinblue):</strong> Transactional email — <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" style="color: var(--accent);">Brevo Privacy</a></li>
-            <li><strong>DigitalOcean:</strong> Cloud hosting — <a href="https://www.digitalocean.com/legal./privacy-policy.html" target="_blank" style="color: var(--accent);">DigitalOcean Privacy</a></li>
+            <li><strong>Password Hashing:</strong> User passwords are hashed using industry-standard cryptographic algorithms and are never stored or transmitted in plain text.</li>
+            <li><strong>Encrypted Transmission:</strong> All data transmitted between the application and our servers is encrypted using Transport Layer Security (TLS/HTTPS).</li>
+            <li><strong>Secure Cloud Infrastructure:</strong> Our data is hosted on DigitalOcean's infrastructure, which maintains SOC 2 Type II compliance.</li>
+            <li><strong>Access Controls:</strong> Access to user data is restricted on a need-to-know basis and is subject to authentication controls.</li>
+            <li><strong>OTP Authentication:</strong> Sensitive account actions are protected by One-Time Password (OTP) verification via Brevo's secure email infrastructure.</li>
         </ul>
+        <div class="highlight-box">
+            <p><strong>Important:</strong> While we implement robust security measures, no method of data transmission over the internet is 100% secure. We encourage you to use a strong, unique password and never share your login credentials.</p>
+        </div>
     </div>
 
     <!-- Section 10 -->
     <div class="section" id="s10">
-        <h2><span class="section-num">10</span> Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. When we do, we will:</p>
+        <h2><span class="section-num">10</span> Children's Privacy</h2>
+        <p>Taalimi Safar is intended for general student audiences in India. We encourage parents and guardians to supervise internet usage by minors. Users should avoid sharing sensitive personal information publicly in community discussions.</p>
         <ul>
-            <li>Update the "Last updated" date at the top of this page.</li>
-            <li>Send an in-app notification for material changes.</li>
+            <li><strong>POCSO compliance:</strong> Strict adherence to the Protection of Children from Sexual Offences Act. No harmful or exploitative content is permitted.</li>
+            <li><strong>POSH compliance:</strong> Zero tolerance for sexual harassment. Safe reporting channels are integrated.</li>
+            <li><strong>Content moderation:</strong> All educational and counselling material is reviewed to ensure appropriateness for minors and adults.</li>
         </ul>
-        <p>Continued use of Taalimi Safar after changes take effect constitutes acceptance of the updated policy.</p>
     </div>
 
     <!-- Section 11 -->
     <div class="section" id="s11">
-        <h2><span class="section-num">11</span> Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please reach out to us:</p>
+        <h2><span class="section-num">11</span> Your Rights & Choices</h2>
+        <p>Under the Digital Personal Data Protection Act, 2023 (DPDPA) and applicable data protection principles, you have the following rights with respect to your personal information:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> You may request a summary of the personal data we hold about you and how it is being processed.</li>
+            <li><strong>Right to Correction:</strong> You may update or correct inaccurate personal data through your in-app account settings or by contacting us.</li>
+            <li><strong>Right to Withdraw Consent:</strong> You may discontinue use of the application at any time if you no longer wish to use the services.</li>
+            <li><strong>Grievance Redressal:</strong> You have the right to raise a grievance with us regarding our data practices.</li>
+            <li><strong>Notification Controls:</strong> You can manage or opt out of push notifications at any time through your Android device's notification settings.</li>
+        </ul>
     </div>
 
-    <div class="contact-card">
-        <h3>🛡️ Privacy & Data Requests</h3>
-        <p>Our team typically responds within 2–3 business days.</p>
-        <a href="mailto:support@taalimisafar.com">Contact Us: support@taalimisafar.com</a>
+    <!-- Section 12 -->
+    <div class="section" id="s12">
+        <h2><span class="section-num">12</span> Cookies & Tracking Technologies</h2>
+        <p>As a native Android application, Taalimi Safar does not use browser-based cookies. However, we may use the following technologies within the application:</p>
+        <ul>
+            <li><strong>Session Tokens:</strong> Secure, encrypted authentication tokens stored locally on your device to maintain your logged-in session. These expire upon logout.</li>
+            <li><strong>Local Storage:</strong> Certain app preferences may be cached locally on your device for performance purposes.</li>
+        </ul>
+    </div>
+
+    <!-- Section 13 -->
+    <div class="section" id="s13">
+        <h2><span class="section-num">13</span> Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will:</p>
+        <ul>
+            <li>Update the "Last Updated" date at the top of this page;</li>
+            <li>Notify registered users via a push notification and/or email to the address on file; and</li>
+            <li>Display a prominent notice within the application, where appropriate.</li>
+        </ul>
+        <p>Your continued use of Taalimi Safar after the effective date of any update constitutes your acceptance of the revised Privacy Policy.</p>
+    </div>
+
+    <!-- Section 14 -->
+    <div class="section" id="s14">
+        <h2><span class="section-num">14</span> Governing Law & Jurisdiction</h2>
+        <p>This Privacy Policy is governed by and construed in accordance with the laws of the Republic of India, including but not limited to:</p>
+        <ul>
+            <li>The Digital Personal Data Protection Act, 2023 (DPDPA)</li>
+            <li>The Information Technology Act, 2000 and its associated rules</li>
+            <li>The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</li>
+        </ul>
+        <p>Any dispute arising out of or in connection with this Privacy Policy shall be subject to the exclusive jurisdiction of the competent courts of India.</p>
+    </div>
+
+    <!-- Section 15 -->
+    <div class="section" id="s15">
+        <h2><span class="section-num">15</span> Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <div class="contact-card">
+            <h3>Data Privacy Contact — Taalimi Safar</h3>
+            <p><strong>Application:</strong> Taalimi Safar</p>
+            <p><strong>Email:</strong> <a href="mailto:Support@adeebcarefoundation.org" style="color: var(--accent); background: none; padding: 0; box-shadow: none; display: inline; text-decoration: underline;">Support@adeebcarefoundation.org</a> | <a href="mailto:AdeebCareFoundation@gmail.com" style="color: var(--accent); background: none; padding: 0; box-shadow: none; display: inline; text-decoration: underline;">AdeebCareFoundation@gmail.com</a></p>
+            <p><strong>Country:</strong> India</p>
+            <p><strong>Address:</strong> Adeeb Care Foundation. 54 2nd Floor Brijmohan Street, Darya Ganj New Delhi 110002</p>
+            <p><em>Response Time: We aim to respond to all enquiries within 5 business days.</em></p>
+            <br>
+            <a href="mailto:Support@adeebcarefoundation.org">Contact Support</a>
+        </div>
     </div>
 
 </div>
 
 <footer class="footer">
-    <p>© 2026 Taalimi Safar. All rights reserved. &nbsp;|&nbsp;
-        <a href="./privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
-        <a href="./account-deletion.html">Delete Account</a>
-    </p>
+    <p>Taalimi Safar | Privacy Policy | Effective 14 May 2025 | Governed under the laws of the Republic of India</p>
+    <br>
+    <p><a href="./account-deletion.html">Delete Account</a></p>
 </footer>
 
 </body>
